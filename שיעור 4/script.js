@@ -70,22 +70,23 @@ switch (guests) {
     case 1: case 2:
         price = 200;
         totalPrice = guests * price;
-        console.log("room for 2 " + "total price is " + totalPrice + "₪");
+        console.log("you choose room M for 2 " + "total price is " + totalPrice + "₪");
         break;
 
     case 3: case 4: case 5:
         price = 100;
         totalPrice = guests * price;
-        console.log("room for 5 " + "total price is " + totalPrice + "₪");
+        console.log("you choose room L for 5 " + "total price is " + totalPrice + "₪");
         break;
     case 6: case 7: case 8: case 9: case 10: case 11: case 12: case 13: case 14: case 15:
         price = 50;
         totalPrice = guests * price;
-        console.log("room for 15 " + "total price is " + totalPrice + "₪");
+        console.log("you choose room XL for 15 " + "total price is " + totalPrice + "₪");
         break;
 }
 
 const nights = +prompt(" please enter the number of nights:");
+totalPrice *= nights;
 console.log("you will stay for " + nights + " nights and the total price is " + nights * totalPrice + "₪");
 
 const breakFast = prompt("do you want to have breakfast for " + nights + " nights? (yes/no)")
@@ -102,3 +103,4 @@ switch (breakFast) {
         console.log("we take that as no and the total price is " + totalPrice + "₪");
         break;
 }
+
