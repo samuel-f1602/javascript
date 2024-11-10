@@ -4,7 +4,7 @@
 // while
 // for
 
-//while
+//loops-while
 // כל סיבוב שלם של לולאה נקראת איטרציה
 // ניצור משתה שמתחיל מ-0
 // ונגיד ללולאה שכל עוד המספר קטן מ100 תגדיל אותו כל פעם באחד
@@ -92,6 +92,89 @@ console.log('******************* ex5 ***********');
 let ex5 = 2
 while (ex5 <= 20) {
     console.log(ex5);
-
     ex5 += 2;
 }
+
+console.log('***************** for ********************');
+//loops-for
+// אנחנו רושמים כמעט הכל בשורה אחת while בשונה מלולאת for בלולאת 
+// זה קיצור לאיטרטור i 
+// i לקרוא למשתנה for כדי שיהיה מובן לכולם הקוד שלנו נהוג בלולאת 
+//      פונקציה /  תנאי  /  משתנה  
+//for loops syntax:
+//for(declaration, condition,increment/decrement(operation))      
+for (let i = 1; i <= 100; i++) {
+    console.log(i);
+}
+// בעצם זה חוסך לנו שורות קוד ואנחנו רושמים את כל הפרמטרים בשורה אחת
+//<= הגדרנו תנאי let בעצם בשורה אחת יצרנו משתנה
+// ++  והבאנו לו פונקציה
+
+// פעם 100 hello אם נעשה כזה דבר זה ירשום לנו 
+//for (let i = 1; i <= 100; i++) {
+//console.log("hello");
+//}
+
+console.log('********* ex1 ********');
+for (let i = 1; i <= 10; i++) {
+    console.log(i);
+}
+
+console.log('********** ex2 *******');
+for (let i = 2; i <= 7; i++) {
+    console.log(i);
+}
+
+console.log('********* ex3 **********');
+for (let i = 10; i >= 0; i--) {
+    console.log(i);
+
+}
+
+console.log('********* ex4 **********');
+for (let i = 8; i >= 3; i--) {
+    console.log(i);
+
+}
+
+console.log('********* ex5 **********');
+for (let i = 2; i <= 20; i += 2) {
+    console.log(i);
+
+}
+
+console.log('********** ex6 *********');
+let end = +prompt("enter the end number")
+for (let i = 0; i <= end; i++) {
+    console.log(i);
+
+}
+
+console.log('********** ex7 *********');
+let start = +prompt("enter the end number")
+for (let i = start; i <= 100; i++) {
+    console.log(i);
+
+}
+
+console.log('********** ex8 *********');
+let start1 = +prompt("enter the start1 number")
+let end1 = +prompt("enter the end1 number")
+for (let i = start1; i <= end1; i++) {
+    console.log(i);
+
+}
+
+console.log('************ ex9 ***********');
+//לא הסתדרתי
+
+
+console.log('********** ex10 *********');
+let start3 = +prompt("enter the start1 number")
+let end3 = +prompt("enter the end1 number")
+let space = +prompt("enter the space number")
+for (let i = start3; i <= end3; i += space) {
+    console.log(i);
+
+}
+
