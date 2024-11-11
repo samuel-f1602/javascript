@@ -192,3 +192,17 @@ console.log('********** ex10 *********');
 
 //}
 
+console.log('************* ex11 ***********');
+
+const numberOfWords = +prompt("please enter number of words:")
+let sentence = "";
+
+for (let i = 1; i <= numberOfWords; i++) {
+    const word = prompt("please enter word number" + i);
+    sentence += word + " ";
+}
+
+console.log(sentence);
+
+
+
