@@ -166,15 +166,29 @@ for (let i = start1; i <= end1; i++) {
 }
 
 console.log('************ ex9 ***********');
-//לא הסתדרתי
+//או לולאה יורדת או עולה 
+const start2 = +prompt("please enter start2 number:")
+const end2 = +prompt("please enter end2 number:")
+
+if (start2 > end2) {
+    for (let i = start2; i >= end2; i--) {
+        console.log(i);
+
+    }
+} else {
+    for (let i = start2; i <= end2; i++) {
+        console.log(i);
+
+    }
+}
 
 
 console.log('********** ex10 *********');
-let start3 = +prompt("enter the start1 number")
-let end3 = +prompt("enter the end1 number")
-let space = +prompt("enter the space number")
-for (let i = start3; i <= end3; i += space) {
-    console.log(i);
+//let start3 = +prompt("enter the start3 number")
+//let end3 = +prompt("enter the end3 number")
+//let space = +prompt("enter the space3 number")
+//for (let i = start3; i <= end3; i += space) {
+//console.log(i);
 
-}
+//}
 
