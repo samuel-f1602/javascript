@@ -156,5 +156,26 @@ for (let actor1 in movieName1) {
     console.log(newItem);
 }
 
-
 //√=option+v
+
+console.log("\n********** filter ************");
+//כדי לפלטר אלמנט למחוק אלמנט
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+const numbersWithout5 = numbers.filter(function (item, i) {
+    console.log("i: " + i + ", item: " + item);
+    return item !== 5;
+});
+
+console.log(numbersWithout5);
+
+
+console.log("***************");
+
+const numbers2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const oddnumbers = numbers2.filter(function (item1) {
+    return item1 % 2 !== 0;
+})
+
+console.log(oddnumbers);
+
