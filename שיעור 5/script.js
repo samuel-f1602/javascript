@@ -105,15 +105,6 @@ console.log(colors2);
 //'blue', 'yellow', 'black', 'white', 'purple', 'orange'
 
 
-console.log("************** slice ************");
-//הוא יוצר לי העתק של המערך המקורי ועושה את השינוים עליו spliceבשונה מ 
-const colors3 = ['Blue', 'Yellow', 'Red', 'Green', 'Purple', 'Orange'];
-
-let myColors = colors3.slice(2, 5); // removes ['Blue', 'Yellow', 'Orange']
-
-console.log(`myColors: ${myColors}`); // new array - ['Red', 'Green', 'Purple']
-console.log(`colors: ${colors3}`);
-
 
 console.log("********** ex ***************");
 
@@ -148,3 +139,13 @@ console.log(contact);
 console.log();
 
 
+
+//undestructive
+console.log("************** slice ************");
+//הוא יוצר לי העתק של המערך המקורי ועושה את השינוים עליו spliceבשונה מ 
+const colors3 = ['Blue', 'Yellow', 'Red', 'Green', 'Purple', 'Orange'];
+// 5 פה מדובר מהאינדקס 2 עד אינדקס 5 לא כולל
+let myColors = colors3.slice(2, 5); // removes ['Blue', 'Yellow', 'Orange']
+
+console.log(`myColors: ${myColors}`); // new array - ['Red', 'Green', 'Purple']
+console.log(`colors: ${colors3}`);
