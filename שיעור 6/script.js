@@ -171,7 +171,7 @@ console.log(numbersWithout5);
 
 
 console.log("***************");
-
+//אי זוגי
 const numbers2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 const oddnumbers = numbers2.filter(function (item1) {
     return item1 % 2 !== 0;
@@ -186,3 +186,34 @@ const oddnumbers1 = ex.filter(function (item2) {
 })
 
 console.log(oddnumbers1);
+
+//זוגי
+const ex1 = [11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
+const evenNumbers = ex1.filter(function (item3) {
+    return item3 % 2 === 0;
+})
+
+console.log(evenNumbers);
+
+//יתן לי רק את המספר שאני ארשום
+const ex2 = [11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
+const ex3 = ex2.filter(function (item4) {
+    return item4 === 15;
+})
+
+console.log(ex3);
+
+//מספרים זוגיים פלוס להכפיל אותם
+
+const grades = [100, 93, 80, 71, 65, 50, 40, 39, 20, 10];
+console.log(grades);
+
+const evengrades = grades.filter(function (grade) {
+    return grade % 2 === 0;
+})
+
+for (let i in evengrades) {
+    evengrades[i] *= 100;
+}
+
+console.log(evengrades);
