@@ -179,3 +179,10 @@ const oddnumbers = numbers2.filter(function (item1) {
 
 console.log(oddnumbers);
 
+console.log("\n********** ex *************");
+const ex = [11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
+const oddnumbers1 = ex.filter(function (item2) {
+    return item2 % 2 !== 0;
+})
+
+console.log(oddnumbers1);
