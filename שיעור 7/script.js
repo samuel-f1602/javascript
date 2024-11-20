@@ -139,4 +139,59 @@ console.log(numbers2);
     */
 
 console.log("\n\n*********ex********");
+// צרו מערך המכיל 5 מספרים   
+// צרו מערך חדש שבו כל מספר יהיה כפול 10 מהמערך הראשון
+
+// צרו מערך המכיל 10 מספרים
+// צרו מערך חדש שבו כל מספר יהיה כפול 100 מהמערך הראשון במידה והוא זוגי
+
+// צרו מערך של 5 ערי בירה
+// צרו מערך נוסף בעל מספר איברים זהה ובו שמת של המדינות של ערי הבירה
+
+// צרו מערך חדש מתוך 2 המערכים שבו כל איבר יהיה סטרינג שבו שם המדינה והעיר
+
+console.log("\n\n*********ex1********");
+
+const numbers3 = [100, 200, 300, 400, 500];
+
+const numbers4 = numbers3.map((num1) => {
+    return num1 * 10;
+})
+
+console.log(numbers4);
+
+console.log("\n\n*********ex2********");
+
+const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+const newNumsArray = nums.filter((num) => {
+    return num % 2 === 0;
+}).map((num) => {
+    return num * 100;
+});
+
+console.log(newNumsArray);
+
+/* const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+ const newNumsArray = nums.filter((num) => num % 2 === 0;).map((num) => {
+    return num * 100;
+}); */
+
+// return לא צריך  scope אם אין לנו 
+//זה יעבוד לנו רק בשורת קוד אחת
+
+console.log("\n\n*********ex3********");
+
+const capitalEx = ['jerusalem', 'paris', 'berlin', 'london', 'rome'];
+const countryEx = ['Israel', 'France', 'Germany', 'England', 'Italy'];
+
+//"jerusalem - israel"
+const citiesAndCountries = capitalEx.map((item, i) => {
+    return item + ' - ' + countryEx[i];
+});
+
+console.log(citiesAndCountries);
+
+
 
