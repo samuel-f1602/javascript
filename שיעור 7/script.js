@@ -190,8 +190,58 @@ const countryEx = ['Israel', 'France', 'Germany', 'England', 'Italy'];
 const citiesAndCountries = capitalEx.map((item, i) => {
     return item + ' - ' + countryEx[i];
 });
+/*"jerusalem - israel"
+const citiesAndCountries = capitalEx.map((item, i) => {
+    return i + ": "item + ' - ' + countryEx[i];
+});*/
 
 console.log(citiesAndCountries);
 
+//כדי שירד שורה בין אחד לאחד
+citiesAndCountries.forEach((item) => {
+    console.log(item);
+
+})
+
+//כדי שירד שתי שורות בין אחד לאחד
+citiesAndCountries.forEach((item) => {
+    console.log(item + "\n\n");
+
+})
 
 
+console.log("*********** reduce *********");
+
+const ages = [31, 44, 45, 42, 37, 26, 21];
+
+const sum = ages.reduce((acc, item) => {
+    // האפס זה בעצם הערך הצבור זאת אומרת שהוא מתחיל מ0
+    return acc + item;
+}, 0);
+
+console.log(sum);
+
+//כדי לקבל את המספר הגבוהה
+//const ages = [31, 44, 45, 42, 37, 26, 21];
+//const sum = ages.reduce((acc, item) => {
+//if(acc > item){
+//return acc;
+//}else {
+//return item;
+//}
+//}, 0);
+
+//console.log("ages average in our humble class is: " + sum / ages.length);
+
+
+const heights = [180, 170, 160, 190, 200, 150, 140,]
+
+const highest = heights.reduce((acc, item) => {
+    if (item > acc) {
+        return item;
+    } else {
+        return acc;
+    }
+}, 0);
+
+console.log("the highest student in our humble class is: " + highest);
