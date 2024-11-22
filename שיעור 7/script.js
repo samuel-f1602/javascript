@@ -231,7 +231,8 @@ console.log(sum);
 //}
 //}, 0);
 
-//console.log("ages average in our humble class is: " + sum / ages.length);
+//ממוצע
+console.log("ages average in our humble class is: " + sum / ages.length);
 
 
 const heights = [180, 170, 160, 190, 200, 150, 140,]
