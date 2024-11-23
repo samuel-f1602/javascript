@@ -144,14 +144,54 @@ console.log("\n****** function ******");
 //const uppercasedArray = function printArray (arr){
 //};
 
+//איך לעשות כדי לשנות את האות הראשונה של האיברים לאות גדולה
 const uppercasedArray = (arr) => {
-    const newArray = [];
     for (let i = 0; i < arr.length; i++) {
+        //הגדרנו משתנה לאינדקס במערך
         let currentItem = arr[i];
-        let word = "";
-
+        //הגדרנו הגדלה לאות הראשונה באינדקס 0
+        //ועשינו גזירה למיקום שיפסיק ההגדלה ובמקרה הזה זה יהיה אינדקס 2 במילה
+        let word = currentItem[0].toUpperCase() + currentItem.slice(1);
+        arr[i] = word;
     }
 };
+// זה משתנה לא משנה arr בעצם פה ה 
+//איזה מערך ניתן לו
+
+const movies = ["titanic", "avatar", "inception", "interstellar"];
+console.log(movies);
+uppercasedArray(movies);
+//אחרי הגדלה לאות הראשונה
+console.log(movies);
+console.log("*יצרנו פונקציה להגדלה לאות הראשונה במערך*");
+//מערך חדש
+const item = ["chair", "table", "sofa", "desk"];
+console.log(item);
+uppercasedArray(item);
+console.log(item);
+
+
+console.log("\n* log בלי כל ה return עם  *");
+
+const uppercasedArray1 = (arr) => {
+    let newArr = [];
+    for (let i = 0; i < arr.length; i++) {
+        //הגדרנו משתנה לאיבר הנוכחי במערך
+        let currentItem = arr[i];
+        // הגדרנו הגדלה באינדקס 0 באיבר הנוכחי
+        //ועשינו גזירה למיקום שיפסיק ההגדלה ובמקרה הזה זה יהיה אינדקס 1 באיבר הנוכחי
+        let word = currentItem[0].toUpperCase() + currentItem.slice(1);
+        newArr.push(word);
+    }
+    return newArr;
+};
+
+const fight = ["mma", "boxe", "karate", "judo"]
+console.log(uppercasedArray1(fight));
+console.log(fight);
+console.log(uppercasedArray1(["samuel"])[0]);
+
+
 
 
 
