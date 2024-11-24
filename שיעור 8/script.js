@@ -218,6 +218,36 @@ console.log(firstAndLastFight);
 //נדפיס את האורך שלו
 console.log(firstAndLastFight.length);
 
+console.log("\n******* ex *******");
+
+//נגיד ויש לי ציונים בכיתה ואני רוצה שיחזיר לי את הציונים הגדולים מ 90 או שווים ל90
+//תחזיר לי ציונים הקטנים מ90 וגדולים מ70
+//תחזיר לי ציונ ים הקטנים מ70
+
+const result = [100, 95, 70, 60, 90, 50, 40, 85, 75, 65]
+
+const excelent = result.filter((item, i) => {
+    return item >= 90;
+})
+
+const passed = result.filter((item, i) => {
+    return item < 90 && item >= 70;
+})
+
+const failed = result.filter((item, i) => {
+    return item < 70
+})
+
+console.log("excelent student is: " + excelent);
+
+console.log("passed student is: " + passed);
+
+console.log("failed student is: " + failed);
+
+console.log("\n*****************");
+
+
+
 
 
 
