@@ -191,6 +191,34 @@ console.log(uppercasedArray1(fight));
 console.log(fight);
 console.log(uppercasedArray1(["samuel"])[0]);
 
+console.log("******* filter *******");
+
+//למה נועד הפילטר 
+//פילטר נועד לסנן לדוגמא במערך אני רוצה רק את האיבר הראשון ואת האחרון
+
+//פילטר מקבל 3 פרמטרים משתנה,אינדקס,מערך
+//אם אנחנו נשתמש רק בפרמטר אחד לא נצטרך עוד סוגריים
+//const firstAndLastMovie = fight.filter(item => {
+
+//});
+
+const firstAndLastFight = fight.filter((item, i) => {
+    return i === 0 || i === fight.length - 1;
+});
+
+//ביקשתי ממנו שיחזיר לי return בעצם פה ב
+// length - 1 במקרה והאינדקס שווה ל0 או 
+//שזה האיבר האחרון
+//אם הייתי רוצה שיענה לי גם על התנאי הראשון וגם על התנאי השני הייתי שם 
+//&&
+
+console.log(firstAndLastFight);
+
+//אם אני רוצה הדפסה של כמות האיברים ולא את האיברים עצמם
+//נדפיס את האורך שלו
+console.log(firstAndLastFight.length);
+
+
 
 
 
