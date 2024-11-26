@@ -6,7 +6,7 @@ console.log("******* ex *******");
 ניתן להתחיל עם תגיות ב-HTML או ליצור דרך ה-J */
 
 console.log("***** jsהדפסה מ ****");
-
+//js עם html לכתוב במסמך 
 const title1 = "hello1"
 document.write("<h1>" + title1 + "</h1>")
 const paragraph1 = "hi everybody 1"
@@ -28,7 +28,7 @@ const paragraph4 = "hi everybody 4"
 document.write("<p>" + paragraph4 + "</p>")
 
 console.log("\n******* htmlהדפסה מ *******");
-
+//id עם html להדפיס מ 
 const title5 = document.getElementById("title-ex1");
 console.log(title5.innerHTML);
 const paragraph5 = document.getElementById("p-ex1")
