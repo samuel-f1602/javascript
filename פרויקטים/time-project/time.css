@@ -28,6 +28,78 @@
             padding: 20px;
         }
 
+        .clrT {
+            color: blue;
+        }
+
+        .clrI {
+            color: white;
+        }
+
+        .clrM {
+            color: red;
+        }
+
+        .clrE {
+            color: white;
+        }
+
+        .clrA {
+            color: red;
+        }
+
+        .clrR {
+            color: red;
+        }
+
+        .clrO {
+            color: rgb(7, 7, 120);
+        }
+
+        .clrU {
+            color: rgb(7, 7, 120);
+        }
+
+        .clrN {
+            color: white;
+        }
+
+        .clrD {
+            color: red;
+        }
+
+        .clrT2 {
+            color: yellow;
+        }
+
+        .clrH {
+            color: red;
+        }
+
+        .clrE2 {
+            color: yellow;
+        }
+
+        .clrW {
+            color: green;
+        }
+
+        .clrO2 {
+            color: green;
+        }
+
+        .clrR2 {
+            color: white;
+        }
+
+        .clrL2 {
+            color: red;
+        }
+
+        .clrD2 {
+            color: red;
+        }
+
         .world {
             width: 100%;
             height: 100vh;
@@ -36,6 +108,7 @@
             align-items: center;
             text-align: center;
         }
+
 
         .row1 {
             display: block;
