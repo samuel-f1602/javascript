@@ -88,9 +88,8 @@ if (operator === "+") {
 
 console.log(`${rnNum1} ${operator} ${rnNum2} = ${result}`);
 
-
-
-
+//כדי להוריד את כמות המספרים העשרונים
+console.log(+result.toFixed(2));
 
 
 
