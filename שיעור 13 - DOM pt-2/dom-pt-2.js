@@ -198,3 +198,45 @@ const removeItemFromList = () => {
     });
 }
 */
+
+
+console.log("\n** events **");
+const printSelected = () => {
+    const select = document.getElementById('select');
+    console.log(select.value);
+}
+
+console.log("\n** eventlistener **");
+//js דרך select אם יצרתי את 
+// נצטרך לעשות את זה בדרך אחרת
+//eventlistener
+//היא מקבלת שתי פרמטרים
+//פרמטר ראשון
+//אירוע
+
+//פרמטר שני
+//מה יקרה כשיקרה האירוע
+
+const circle = document.querySelector('.circle');
+
+//click=onclick הפרמטר הראשון שזה האירוע 
+//הפרמטר השני שזה מה יקרה כשיקרה האירוע שזה
+//יקרה שצבע רקע יחליף לכחול בעת לחיצה click
+circle.addEventListener('click', (event) => {
+    circle.style.backgroundColor = 'blue';
+    console.log(event);
+    event.target.style.backgroundColor = 'blue';
+
+});
+/*
+//אם רוצים שעל כל לחיצה יהיה צבע רנדומלי
+
+circle.addEventListener('click', (event) => {
+    circle.style.backgroundColor = 'blue';
+    console.log(event);
+    event.target.style.backgroundColor = `rgb(${Math.ceil(Math.random()*255)},${Math.ceil(Math.random()*255)},${Math.ceil(Math.random()*255)})`
+
+;
+
+});
+*/

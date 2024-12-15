@@ -11,7 +11,7 @@
 
 <body>
     <!--nav bar without bootstrap-->
-    <select id="select">
+    <select onchange="printSelected()" id="select">
         <option value="easy">easy</option>
         <option value="medium">medium</option>
         <option value="hard">hard</option>
@@ -57,6 +57,8 @@
     </ul>
 
     <button onclick="removeItemFromList()">remove items</button>
+
+    <div class="circle"></div>
 </body>
 
 </html>
