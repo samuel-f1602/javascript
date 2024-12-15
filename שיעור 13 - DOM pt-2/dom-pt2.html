@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./dom-pt-2.js" defer></script>
+    <link rel="stylesheet" href="./dom-pt-2.css">
+</head>
+
+<body>
+    <!--nav bar without bootstrap-->
+    <select id="select">
+        <option value="easy">easy</option>
+        <option value="medium">medium</option>
+        <option value="hard">hard</option>
+    </select>
+
+    <div id="container">
+        <p>helllo</p>
+    </div>
+    <div id="demo1-container">
+        <p>my name is samuel</p>
+    </div>
+    <div id="demolog">
+        <p>hi evereybody this is on the consule</p>
+    </div>
+
+    <!--הוספת אלמנט-->
+    <div id="empty"></div>
+
+    <!--ex-->
+    <div id="ex1"></div>
+    <div id="ex2">
+        <h4 id="h4"></h4>
+    </div>
+    <div id="ex3"></div>
+
+    <!--מחיקת אלמנטים-->
+    <div id="box1">
+        <p>box 1</p>
+    </div>
+    <button onclick="removeBox1()">remove box 1</button>
+
+    <div id="container2">
+        <p>container2</p>
+    </div>
+    <button onclick="removecontainer2()">remove container 2</button>
+
+    <ul id="list">
+        <li>yes</li>
+        <li>no</li>
+        <li>maybe</li>
+        <li>later</li>
+        <li>I dont know</li>
+    </ul>
+
+    <button onclick="removeItemFromList()">remove items</button>
+</body>
+
+</html>
